@@ -1,0 +1,228 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='headers.css')}}">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+    <title>About Us</title>
+        
+</head>
+<body>
+    <div class="container">
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+          ShopSpot
+        </a>
+  
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="/index" class="nav-link px-2 link-secondary">Home</a></li>
+          <li><a href="/about" class="nav-link px-2 link-dark">About Us</a></li>
+          <li><a href="/products" class="nav-link px-2 link-dark">Products</a></li>
+          <li><a href="/prediction" class="nav-link px-2 link-dark">Prediction</a></li>
+          <li><a href="/analysis" class="nav-link px-2 link-dark">Analysis</a></li>
+          <li><a href="#" class="nav-link px-2 link-dark">About</a></li>
+        </ul>
+  
+        <div class="col-md-3 text-end">
+          <a href="{{ url_for('logout') }}" class="btn btn-outline-primary me-2">Logout</a>
+        </div>
+      
+      </header>
+<header>
+    <h1>About Product Requirement Prediction Project</h1>
+</header>
+
+
+    <h2>Our Mission</h2>
+    <p>Our mission is to revolutionize the way businesses plan and forecast their product requirements. We aim to provide predictive analytics solutions that empower organizations to anticipate their product needs accurately, optimize inventory management, and streamline production processes.</p>
+
+    <h2>What We Do</h2>
+    <p>At Product Requirement Prediction, we leverage advanced machine learning algorithms and data analysis techniques to analyze historical sales data, market trends, and other relevant factors. By harnessing the power of predictive modeling, we forecast future product demands with a high degree of accuracy.</p>
+
+    <h2>How It Works</h2>
+    <p>Our platform aggregates and processes large volumes of data, including past sales records, customer demographics, seasonality patterns, and market dynamics. Using this data, our predictive models generate forecasts that enable businesses to make informed decisions about their production schedules, inventory levels, and resource allocations.</p>
+
+    <h2>Key Features</h2>
+    <ul>
+        <li><strong>Predictive Modeling:</strong> Our advanced algorithms analyze historical data to forecast future product demands.</li>
+        <li><strong>Customizable Solutions:</strong> Tailored models and insights to suit the unique requirements of each business.</li>
+        <li><strong>Real-time Updates:</strong> Continuous monitoring and updating of predictions based on new data inputs.</li>
+        <li><strong>Interactive Dashboard:</strong> Intuitive dashboard interface for visualizing forecasts, trends, and key performance metrics.</li>
+        <li><strong>Scalable Infrastructure:</strong> Robust and scalable infrastructure to handle large datasets and ensure high performance.</li>
+    </ul>
+
+    <h2>Our Team</h2>
+    <p>Our team consists of experienced data scientists, machine learning engineers, and domain experts dedicated to delivering cutting-edge predictive analytics solutions. We are committed to providing exceptional service and support to our clients, helping them unlock the full potential of predictive analytics for their businesses.</p>
+
+    <h2>Get in Touch</h2>
+    <p>Ready to take your business forecasting to the next level? Contact us today to learn more about our predictive analytics solutions and how we can help drive your business forward.</p>
+</div>
+
+<footer class="text-muted py-5">
+    <div class="container">
+      <center>
+        <p class="mb=1">&copy; All rights reserved</p>
+      </center>
+    </div>
+  </footer>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Us</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+<header class="bg-white border-b">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+        <a href="/" class="text-lg font-semibold text-gray-800">ShopSpot</a>
+        <nav class="hidden md:block">
+            <ul class="flex space-x-4">
+                <li><a href="/index" class="text-gray-600 hover:text-gray-800">Home</a></li>
+                <li><a href="/about" class="text-gray-600 hover:text-gray-800">About Us</a></li>
+                <li><a href="/products" class="text-gray-600 hover:text-gray-800">Products</a></li>
+                <li><a href="/prediction" class="text-gray-600 hover:text-gray-800">Prediction</a></li>
+                <li><a href="/analysis" class="text-gray-600 hover:text-gray-800">Analysis</a></li>
+                <li><a href="#" class="text-gray-600 hover:text-gray-800">About</a></li>
+            </ul>
+        </nav>
+        <div class="md:hidden">
+            <button class="text-gray-800 hover:text-gray-900 focus:outline-none">
+                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+        <div class="hidden md:block">
+            <a href="{{ url_for('logout') }}" class="btn btn-outline-primary">Logout</a>
+        </div>
+    </div>
+</header>
+<div class="container mx-auto mt-8 px-4">
+
+    <header class="text-center">
+        <h1 class="text-3xl font-semibold text-gray-800 mb-4">About Product Requirement Prediction Project</h1>
+    </header>
+
+    <section class="mb-8">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-2">Our Mission</h2>
+        <p class="text-gray-700">Our mission is to revolutionize the way businesses plan and forecast their product requirements. We aim to provide predictive analytics solutions that empower organizations to anticipate their product needs accurately, optimize inventory management, and streamline production processes.</p>
+    </section>
+
+    <section class="mb-8">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-2">What We Do</h2>
+        <p class="text-gray-700">At Product Requirement Prediction, we leverage advanced machine learning algorithms and data analysis techniques to analyze historical sales data, market trends, and other relevant factors. By harnessing the power of predictive modeling, we forecast future product demands with a high degree of accuracy.</p>
+    </section>
+
+
+</div>
+<footer class="text-muted py-5">
+    <div class="container mx-auto text-center">
+        <p class="mb-1">&copy; All rights reserved</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Us</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+<div class="container">
+
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+            ShopSpot
+        </a>
+        
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="/index" class="nav-link px-2 link-dark">Home</a></li>
+            <li><a href="/about" class="nav-link px-2 link-secondary">About Us</a></li>
+            <li><a href="/products" class="nav-link px-2 link-dark">Products</a></li>
+            <li><a href="/prediction" class="nav-link px-2 link-dark">Prediction</a></li>
+            <li><a href="/analysis" class="nav-link px-2 link-dark">Analysis</a></li>
+            <li><a href="/contactus" class="nav-link px-2 link-dark">Contact Us</a></li>
+        </ul>
+        
+        <div class="col-md-3 text-end">
+            <a href="{{ url_for('logout') }}" class="btn btn-outline-primary me-2">Logout</a>
+        </div>
+        
+    </header>
+</div>
+    
+<div class="container mx-auto mt-8 px-4">
+
+    <!--<header class="text-center">
+        <h1 class="text-3xl font-semibold text-gray-800 mb-4">About Product Requirement Prediction Project</h1>
+    </header>
+-->
+    <section class="mb-8">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-2" style="text-align:center">Our Mission</h2>
+        <p class="text-gray-700">Our mission is to revolutionize the way businesses plan and forecast their product requirements. We aim to provide predictive analytics solutions that empower organizations to anticipate their product needs accurately, optimize inventory management, and streamline production processes.</p>
+    </section>
+
+    <section class="mb-8">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-2" style="text-align:center">What We Do</h2>
+        <p class="text-gray-700">At Product Requirement Prediction, we leverage advanced machine learning algorithms and data analysis techniques to analyze historical sales data, market trends, and other relevant factors. By harnessing the power of predictive modeling, we forecast future product demands with a high degree of accuracy.</p>
+    </section>
+
+    <section class="mb-8">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-2" style="text-align:center">How It Works</h2>
+        <p class="text-gray-700">Our platform aggregates and processes large volumes of data, including past sales records, customer demographics, seasonality patterns, and market dynamics. Using this data, our predictive models generate forecasts that enable businesses to make informed decisions about their production schedules, inventory levels, and resource allocations.</p>
+    </section>
+
+    <section class="mb-8">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-2" style="text-align:center">Key Features</h2>
+        <ul class="list-disc list-inside text-gray-700">
+            <li><strong>Predictive Modeling:</strong> Our advanced algorithms analyze historical data to forecast future product demands.</li>
+            <li><strong>Customizable Solutions:</strong> Tailored models and insights to suit the unique requirements of each business.</li>
+            <li><strong>Real-time Updates:</strong> Continuous monitoring and updating of predictions based on new data inputs.</li>
+            <li><strong>Interactive Dashboard:</strong> Intuitive dashboard interface for visualizing forecasts, trends, and key performance metrics.</li>
+            <li><strong>Scalable Infrastructure:</strong> Robust and scalable infrastructure to handle large datasets and ensure high performance.</li>
+        </ul>
+    </section>
+
+    <section class="mb-8">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-2" style="text-align:center">Our Team</h2>
+        <p class="text-gray-700">Our team consists of experienced data scientists, machine learning engineers, and domain experts dedicated to delivering cutting-edge predictive analytics solutions. We are committed to providing exceptional service and support to our clients, helping them unlock the full potential of predictive analytics for their businesses.</p>
+    </section>
+
+    <section class="mb-8">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-2" style="text-align:center">Get in Touch</h2>
+        <p class="text-gray-700">Ready to take your business forecasting to the next level? Contact us today to learn more about our predictive analytics solutions and how we can help drive your business forward.</p>
+    </section>
+
+</div>
+
+<footer class="text-muted py-5">
+    <div class="container mx-auto text-center">
+        <p class="mb-1">&copy; All rights reserved</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

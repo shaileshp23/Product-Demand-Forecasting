@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="{{ url_for('static', filename='headers.css')}}">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+        <title>Contact Us</title>
+    </head>
+    <body>
+        <div class="container">
+            <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+                <a href="/index" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+                    ShopSpot
+                </a>
+                <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="/index" class="nav-link px-2 link-dark">Home</a></li>
+                    <li><a href="/about" class="nav-link px-2 link-dark">About Us</a></li>
+                    <li><a href="/products" class="nav-link px-2 link-dark">Products</a></li>
+                    <li><a href="/prediction" class="nav-link px-2 link-dark">Prediction</a></li>
+                    <li><a href="/analysis" class="nav-link px-2 link-dark">Analysis</a></li>
+                    <li><a href="/contactus" class="nav-link px-2 link-secondary">Contact Us</a></li>
+                </ul>
+        
+                <div class="col-md-3 text-end">
+                    <a href="{{ url_for('logout') }}" class="btn btn-outline-primary me-2">Logout</a>
+                </div>
+            </header>
+        </div>
+
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-4">
+                </div>
+                <div class="col-4">
+                    <h2>Contact Us</h2>
+                    <br>
+                    <form method="POST" action="/contactus">
+                        <input class="form-control" type="text" name="name" id="name" placeholder="Enter full name" required autofocus autocomplete="off">
+                        <input class="form-control" type="email" name="email" id="email" placeholder="Enter your email id" required autocomplete="off">
+                        <textarea class="form-control" type="text" name="txtmessage" id="txtmessage" rows="5" placeholder="Type your message here" required></textarea>
+                        <br>
+                        <center>
+                            <button class="btn btn-lg btn-primary mb-3" type="submit">Submit</button>
+                        </center>
+                    </form>
+                </div>
+                <div class="col-4">
+                </div>
+            </div>
+        </div>
+        <footer class="text-muted py-5">
+            <div class="container">
+                <center>
+                    <p class="mb-1">&copy; All rights reserved</p>
+                </center>
+            </div>
+        <footer>
+    </body>
+</html>
